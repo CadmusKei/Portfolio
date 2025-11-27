@@ -5,7 +5,7 @@ import Poster from "./components/Poster";
 function App() {
   return (
     <>
-      <div className="flex flex-col w-full h-full bg-neutral-800">
+      <div className="flex flex-col w-full h-full bg-neutral-800 highlight-white">
         <Nav />
         <Poster name="Bio" desc="This is my bio" className="mt-40"/>
         <Poster name="Pro" className="mt-40"/>

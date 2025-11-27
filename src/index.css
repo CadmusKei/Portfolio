@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.text-pixel {
+  font-family: 'Pixelify Sans', monospace;
+  image-rendering: pixelated; /* keeps it crisp for pixel look */
+}
+
+@layer base {
+  ::selection {
+    background-color: #4ade80; /* green-400 */
+    color: black;
+  }
+}
+
 @import 'tailwindcss';
 
-@font-face {
-    font-family: 'Pixel-Main';
-    src: url('./assets/Fonts/medodica.regular.otf');
-    font-weight: normal;
-    font-style: normal;
-}
