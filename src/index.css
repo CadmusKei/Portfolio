@@ -2,12 +2,12 @@
 
 .text-pixel {
   font-family: 'Pixelify Sans', monospace;
-  image-rendering: pixelated; /* keeps it crisp for pixel look */
+  image-rendering: pixelated; 
 }
 
 @layer base {
   ::selection {
-    background-color: #4ade80; /* green-400 */
+    background-color: #ffffff; 
     color: black;
   }
 }
