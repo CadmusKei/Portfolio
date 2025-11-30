@@ -15,7 +15,7 @@ function Nav() {
           <img src={keiLogo} className="image-pixel w-14 h-10" alt="" /> 
           <div className="flex w-full items-center mt-2">
             <Title className="pl-1 underline mb-3" name="Kei Farouk"/>
-            <div className=" flex space-x-20 ml-[40%]">
+            <div className="absolute flex space-x-20 right-[5%]">
               <Icon path={piIcon} scalar="w-8 h-6 " hoverColour="hover:border-emerald-200 hover:bg-emerald-800" />  
               <Icon path={chipIcon} scalar="w-8 h-8 " hoverColour="hover:border-purple-400 hover:bg-purple-900"   />  
               <Icon path={quaverIcon} scalar="w-7 h-6 " hoverColour="hover:border-cyan-200  hover:bg-cyan-600 "/>  
