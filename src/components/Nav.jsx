@@ -10,11 +10,11 @@ import keiLogo from '../assets/Icons/KeiLogoPixel.svg';
 function Nav() {
   return (
     <>
-      <div className="w-full h-[12%] bg-[#1111118e] fixed shadow-xl z-50">
+      <div className="w-full h-[15%] bg-[#1111118e] fixed shadow-xl z-50">
         <div className="flex pl-10 w-full h-full items-center space-x-20">
-          <img src={keiLogo} className="image-pixel w-14 h-10" alt="" /> 
-          <div className="flex w-full items-center mt-2">
-            <Title className="pl-1 underline mb-3" name="Kei Farouk"/>
+          <img src={keiLogo} className="image-pixel w-14 h-10 ml-1" alt="" /> 
+          <div className="flex w-full items-center">
+            <Title className="pl-1 mt-3 mb-3" name="Kei Farouk"/>
             <div className="absolute flex space-x-20 right-[5%]">
               <Icon path={piIcon} scalar="w-8 h-6 " hoverColour="hover:border-emerald-200 hover:bg-emerald-800" />  
               <Icon path={chipIcon} scalar="w-8 h-8 " hoverColour="hover:border-purple-400 hover:bg-purple-900"   />  

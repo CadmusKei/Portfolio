@@ -35,10 +35,10 @@ function App() {
           <div
               ref={scrollRef}
             className="flex space-x-30 w-full h-screen bg-[#212121] overflow-x-hidden overflow-y-hidden items-center px-20 z-[1]">
-            <Poster name="Bio" desc="Who is this guy?!" image={posterImage} className="mt-40"/>
-            <Poster name="Projects" desc="A peak inside the Github vault"  image={CSImage} className="mt-40"/>
-            <Poster name="Music" desc="Lo-fi beats to debug to"  image={musicImage} className="mt-40"/>
-            <Poster name="Art" desc="My digital napkin sketches." className="mt-40"/>
+            <Poster name="Bio" desc="Who is this guy?!" image={posterImage}/>
+            <Poster name="Projects" desc="A peak inside the Github vault"  image={CSImage}/>
+            <Poster name="Music" desc="Lo-fi beats to debug to"  image={musicImage}/>
+            <Poster name="Art" desc="My digital napkin sketches."/>
           </div>
     </>
       
