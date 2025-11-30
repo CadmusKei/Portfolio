@@ -4,7 +4,7 @@ function Icon({ link, path, scalar, hoverColour }) {
       <a href="#">
         <div className={
           `flex w-14 h-14 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800  items-center justify-center 
-          transition ${hoverColour} hover:duration-400  duration-900`
+          transition ${hoverColour} hover:duration-400  duration-900 hover:-rotate-4`
           }>
           <img src={path} alt="" className={`${scalar} image-pixel `}  />
         </div>
