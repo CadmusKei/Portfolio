@@ -12,5 +12,9 @@
   }
 }
 
+.image-pixel {
+  image-rendering: pixelated;
+}
+
 @import 'tailwindcss';
 
