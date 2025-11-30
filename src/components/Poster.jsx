@@ -9,7 +9,7 @@ function Poster({className, name, desc, image}) {
     <>
       {/* Poster dividing blocks */}
       <div className={`flex w-[96%] shrink-0 h-[60%] justify-center items-center space-x-30 rounded-4xl bg-[#11111183] shadow-2xl`}>
-        <Block width="w-[25%]" height="h-[110%]" className="flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700">
+        <Block width="w-[28%]" height="h-[110%]" className="flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700">
           <div className="flex flex-col h-full w-full justify-start items-center space-y-[10%]">
             <AnimatedCover src={image} />
             <div className="flex">
