@@ -1,7 +1,7 @@
 function AnimatedCover({ src, width, height }) {
   return (
-    <div className={` overflow-hidden ${width} ${height} image-rendering-[pixelated]`}>
-      <img src={src} alt="" className="image-pixel" />
+    <div className={` overflow-hidden  image-rendering-[pixelated]`}>
+      <img src={src} alt="" className={` ${width} ${height} image-pixel`} />
     </div>
   );
 }
