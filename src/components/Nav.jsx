@@ -16,10 +16,10 @@ function Nav() {
           <div className="flex w-full items-center">
             <Title className="pl-1 mt-3 mb-3" name="Kei Farouk"/>
             <div className="absolute flex space-x-20 right-[5%]">
-              <Icon path={piIcon} scalar="w-8 h-6 " hoverColour="hover:border-emerald-200 hover:bg-emerald-800" />  
-              <Icon path={chipIcon} scalar="w-8 h-8 " hoverColour="hover:border-purple-400 hover:bg-purple-900"   />  
-              <Icon path={quaverIcon} scalar="w-7 h-6 " hoverColour="hover:border-cyan-200  hover:bg-cyan-600 "/>  
-              <Icon path={heartIcon} scalar="w-8 h-7" hoverColour="hover:border-rose-400   hover:bg-rose-900 "/>  
+              <Icon path={piIcon} scalar="w-8 h-6 " hoverColour="hover:border-emerald-200 hover:bg-emerald-800" angle="-rotate-3" />  
+              <Icon path={chipIcon} scalar="w-8 h-8 " hoverColour="hover:border-purple-400 hover:bg-purple-900"  angle="rotate-2" />  
+              <Icon path={quaverIcon} scalar="w-7 h-6 " hoverColour="hover:border-cyan-200  hover:bg-cyan-600 " angle="-rotate-3"/>  
+              <Icon path={heartIcon} scalar="w-8 h-7" hoverColour="hover:border-rose-400   hover:bg-rose-900 " angle="rotate-2"/>  
             </div>
           </div> 
         </div>

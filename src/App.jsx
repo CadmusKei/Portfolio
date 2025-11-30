@@ -40,7 +40,10 @@ function App() {
             <Poster name="Music" desc="Lo-fi beats to debug to"  image={musicImage} colour="hover:border-sky-400"/>
             <Poster name="Art" desc="My digital napkin sketches." colour="hover:border-rose-400"/>
           </div>
+
     </>
+      
+
       
   );
 }
