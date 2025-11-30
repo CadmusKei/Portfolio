@@ -31,17 +31,19 @@ function App() {
 
   return (
     <>
-      <Nav />
-      <div
-        ref={scrollRef}
-        className="flex space-x-30 w-full h-screen bg-[#212121] overflow-x-hidden overflow-y-hidden justify-center items-center"
-      >
-        <Poster name="Bio" desc="Who is this guy?!" image={posterImage} className="mt-40"/>
-        <Poster name="Projects" desc="A peak inside the Github vault"  image={CSImage} className="mt-40"/>
-        <Poster name="Music" desc="Lo-fi beats to debug to"  image={musicImage} className="mt-40"/>
-        <Poster name="Art" desc="My digital napkin sketches." className="mt-40"/>
+      <div>
+        <Nav />
+        <div
+            ref={scrollRef}
+          className="flex space-x-30 w-full h-screen bg-[#212121] overflow-x-hidden overflow-y-hidden items-center">
+          <Poster name="Bio" desc="Who is this guy?!" image={posterImage} className="mt-40"/>
+          <Poster name="Projects" desc="A peak inside the Github vault"  image={CSImage} className="mt-40"/>
+          <Poster name="Music" desc="Lo-fi beats to debug to"  image={musicImage} className="mt-40"/>
+          <Poster name="Art" desc="My digital napkin sketches." className="mt-40"/>
+        </div>
       </div>
     </>
+      
   );
 }
 
