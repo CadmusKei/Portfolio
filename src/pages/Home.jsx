@@ -21,16 +21,23 @@ function Home() {
     return () => el?.removeEventListener("wheel", handleWheel);
   }, []);
 
+  let navColour = "bg-[#00000041]"
+
+  
+
   return (
     <>
-      <Nav />
+
+      
+
+      <Nav background={navColour} TitleColour="text-white" />
       <div
         ref={scrollRef}
         className="flex space-x-30 w-full h-screen bg-[#222222] overflow-x-hidden overflow-y-hidden items-center px-20">
         <Poster name="Bio" link="/Bio" desc="Who is this guy?!" image={posterImage} colour="hover:border-emerald-400"/>
         <Poster name="Projects" desc="A peak inside the Github vault" image={CSImage} colour="hover:border-purple-400"/>
         <Poster name="Music" desc="Lo-fi beats to debug to" image={musicImage} colour="hover:border-sky-400"/>
-        <Poster name="Art" desc="My digital napkin sketches." colour="hover:border-rose-400"/>
+        <Poster name="Contact" desc="Ping me" colour="hover:border-rose-400"/>
       </div>
     </>
   );

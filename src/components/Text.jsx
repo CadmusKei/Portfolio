@@ -1,5 +1,5 @@
-function Text({ content }) {
-  return <p className=" text-white text-pixel font-serif">{content}</p>;
+function Text({ children }) {
+  return <p className=" text-white text-pixel text-2xl font-serif">{children}</p>;
 }
 
 export default Text;
