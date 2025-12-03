@@ -9,14 +9,14 @@ function Poster({name, desc, image, colour}) {
     <>
       {/* Poster dividing blocks */}
       <div className={`flex w-[96%] shrink-0 h-[65%] justify-center items-center 
-          space-x-30 rounded-4xl bg-neutral-900 border-4 border-neutral-800 shadow-2xl mt-20`}>
+          space-x-30 rounded-4xl bg-neutral-900 border-[0.4rem] border-neutral-800 shadow-2xl mt-20`}>
 
-          <Block width="w-[28%]" height="h-[105%]" className={`flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700
+          <Block width="w-[28%]" height="h-[100%]" className={`flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700
           border-2 border-neutral-800 ${colour}`}>
-            <div className="flex flex-col h-full w-full justify-start items-center space-y-[15%]">
-              <AnimatedCover src={image} />
-              <div className="flex">
-                <Title name={name}/>
+            <div className="flex flex-col h-full w-full justify-start items-center">
+              <AnimatedCover src={image} width="w-full" />
+              <div className="flex items-center justify-center w-full h-[25%]">
+                <Title name={name} className="text-6xl"/>
               </div>
             </div>
           </Block>
