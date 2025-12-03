@@ -1,7 +1,7 @@
 function Icon({ link, path, scalar, hoverColour, angle }) {
   return (
 
-      <a href="#">
+      <a href={link}>
         <div className={
           `flex w-14 h-14 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800  items-center justify-center 
           transition ${hoverColour} hover:duration-400  duration-900 hover:${angle}`

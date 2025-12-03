@@ -9,10 +9,10 @@ function Poster({name, link, desc, image, colour}) {
   return (
     <>
       {/* Poster dividing blocks */}
-      <Block>
+      <Block className="mt-20">
 
           <Card link={link} width="w-[28%]" height="h-[100%]" className={`flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700
-          border-2 border-neutral-800 ${colour}`}>
+          border-2 border-neutral-800 ${colour} `}>
             <div className="flex flex-col h-full w-full justify-start items-center">
               <AnimatedCover src={image} width="w-full" />
               <div className="flex items-center justify-center w-full h-[25%]">
