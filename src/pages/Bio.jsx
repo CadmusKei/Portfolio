@@ -21,7 +21,7 @@ function Bio(){
                         <Text>I am a Computer Science student at The Univeristity of The Western Cape. I am a Developer, Musician and General-Creative. </Text>
                         <Text>I endavour to mix my passions for Math, Computer-Science, Music and Art in all the ways I can imagine.</Text>
                         <Text>With experience in  Web Development, Game Development, 3D-Modeling, Music Production and so much more, I aspire to bring my visions to life.</Text>
-                         <Text> </Text>
+                         <Text> Something hinting to me wanting to work on space</Text>
 
                 </div>
 
