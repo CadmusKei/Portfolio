@@ -16,5 +16,10 @@
   image-rendering: pixelated;
 }
 
+/* Firefox support */
+.scrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: #696969 #1d1d1d00;
+}
 @import 'tailwindcss';
 
