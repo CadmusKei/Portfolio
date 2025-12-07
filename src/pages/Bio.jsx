@@ -38,7 +38,7 @@ function Bio() {
                         <CV/>
                     </div>
 
-                    <div className="h-full rounded-3xl w-[0.2rem] bg-neutral-400" ></div>
+                    <div className="h-full rounded-3xl w-[0.2rem] bg-[#e7e7e747]" ></div>
 
                     <div className="w-[40%] h-full flex items-center flex-col space-y-15    ">
                         <Title className="text-white underline underline-offset-6 text-center" name="My Inventory"></Title>
@@ -48,11 +48,8 @@ function Bio() {
                             <AppsCarousel/>
                         </div>
                     </div>
-                    
-                
+                      
                 </div>
-
-                <div className="bg-[#66666641]"></div>
 
             </div>
 

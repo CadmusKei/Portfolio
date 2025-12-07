@@ -28,10 +28,12 @@ function Home() {
   return (
     <>
 
+    
+
       <Nav background={navColour} TitleColour="text-white" />
       <div
         ref={scrollRef}
-        className="flex space-x-30 w-full h-screen bg-linear-to-br from-[#101010] to-[#171d1e] overflow-x-hidden overflow-y-hidden items-center px-20">
+        className="flex space-x-30 w-full h-screen bg-[#1c1c1c] overflow-x-hidden overflow-y-hidden items-center px-20">
         <Poster name="Bio" link="/Bio" desc="Who is this guy?!" image={posterImage} colour="hover:border-emerald-400" />
         <Poster name="Projects" desc="A peak inside the Github vault" image={CSImage} colour="hover:border-purple-400" />
         <Poster name="Music" desc="Lo-fi beats to debug to" image={musicImage} colour="hover:border-sky-400" />

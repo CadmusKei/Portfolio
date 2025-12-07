@@ -153,7 +153,7 @@ function CV({ className }) {
 
                 <a href="https://colombo.coffee/" target="_blank" className="text-white text-2xl underline">https://colombo.coffee/</a>
         
-
+                <div className="h-10 w-full bg-[#ffffff00]"></div>
 
             </ol>
 
