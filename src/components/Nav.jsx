@@ -15,8 +15,8 @@ function Nav({TitleColour, background}) {
           
          <a href="/">
          <div className={
-          `flex w-18 h-18 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800  items-center justify-center 
-          transition hover:duration-400 hover:border-neutral-400 hover:bg-neutral-600 duration-900`
+          `flex w-18 h-18 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800 items-center justify-center 
+          transition hover:duration-400 hover:border-neutral-400 hover:bg-[#e1e1e13d] duration-900`
           }>
             <img src={keiLogo} alt="" className={`w-11 h-8 image-pixel `}  />
          </div>
