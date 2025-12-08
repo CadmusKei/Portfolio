@@ -10,7 +10,6 @@ import AppsCarousel from "../components/AppsCarousel";
 
 import arrowIcon from "../assets/Icons/Down-Arrow.svg"
 
-
 import backgroundPic from '../assets/Images/studio-site-crop.jpeg';
 const pageGradient = "bg-linear-to-br from-neutral-950 to-[#21212141] transition duration-800 hover:to-[#66666641] "
 
@@ -26,6 +25,7 @@ function Bio() {
                     <Text>I love blending my passions for technology, mathematics, music, and art to build projects that come alive.</Text>
                     <Text>With experience in web development, game development, 3D modelling, and music production, I’m driven to bring ideas to life across disciplines. </Text>
                     <Text>Some of my other passions include: HPC, app development, simulations, Lo-fi Production and VFX. </Text>
+                    <div></div>
                     <Icon path={arrowIcon} link="#page-bottom" scalar="w-10 h-6 " hoverColour="hover:border-neutral-200 hover:bg-neutral-600" />  
                 </div>  
 

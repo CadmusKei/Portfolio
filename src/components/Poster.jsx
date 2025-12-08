@@ -6,7 +6,6 @@ import Description from "./Description"
 import AnimatedCover from "./AnimatedCover";
 
 
-
 function Poster({ name, link, desc, image, colour }) {
   return (
     <>
