@@ -35,7 +35,7 @@ function Home() {
         <Poster name="Bio" link="/Bio" desc="Who is this guy?!" image={posterImage} 
         colour="hover:border-emerald-400" hoverColour="hover:to-[#165f2a41] " />
 
-        <Poster name="Projects" desc="A peak inside the Github vault" image={CSImage}
+        <Poster name="Projects" link="/Projects" desc="A peak inside the Github vault" image={CSImage}
          colour="hover:border-purple-400" hoverColour="hover:to-[#46165f54]"  />
 
         <Poster name="Music" desc="Lo-fi beats to debug to" image={musicImage} 
