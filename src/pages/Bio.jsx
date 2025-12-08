@@ -19,7 +19,7 @@ function Bio() {
             <Nav TitleColour="text-white" background={pageGradient} />
             <div className={`flex flex-col pl-20 w-full h-400 bg-cover `} style={{ backgroundImage: `url(${backgroundPic})` }}>
 
-                <div className={`flex w-[60%] flex-col border-2 border-[#7373736f]  ${pageGradient} mt-40 rounded-2xl 
+                <div className={`flex w-[60%] flex-col border-2 border-[#7373736f]  ${pageGradient} mt-40 rounded-4xl 
                 p-12 justify-start items-center space-y-4 shadow-2xl shadow-black`} >
                     <Text>I am a Computer Science student at the University of the Western Cape — a developer, musician, and all-round creative.</Text>
                     <Text>I love blending my passions for technology, mathematics, music, and art to build projects that come alive.</Text>
@@ -30,7 +30,7 @@ function Bio() {
                 </div>  
 
 
-                <div className={`flex w-[95%] h-[40%] bg-linear-to-br from-neutral-950 to-[#21212141] mt-60  rounded-2xl 
+                <div className={`flex w-[95%] h-[40%] bg-linear-to-br from-neutral-950 to-[#21212141] mt-60  rounded-4xl 
                 p-10 justify-around shadow-2xl shadow-black border-2 border-[#a7a7a747]`} >
                     
                     
