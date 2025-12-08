@@ -6,11 +6,11 @@ import Description from "./Description"
 import AnimatedCover from "./AnimatedCover";
 
 
-function Poster({ name, link, desc, image, colour }) {
+function Poster({ name, link, desc, image, colour, hoverColour }) {
   return (
     <>
       {/* Poster dividing blocks */}
-      <Block className="mt-20">
+      <Block className="mt-20" hoverColour={hoverColour}>
 
         <Card link={link} width="w-[28%]" height="h-[100%]" className={`flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700
           border-2 border-neutral-800 ${colour} `}>

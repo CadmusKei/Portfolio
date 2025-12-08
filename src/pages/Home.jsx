@@ -28,17 +28,25 @@ function Home() {
   return (
     <>
 
-    
-
       <Nav background={navColour} TitleColour="text-white" />
       <div
         ref={scrollRef}
         className="flex space-x-30 w-full h-screen bg-[#1c1c1c] overflow-x-hidden overflow-y-hidden items-center px-20">
-        <Poster name="Bio" link="/Bio" desc="Who is this guy?!" image={posterImage} colour="hover:border-emerald-400" />
-        <Poster name="Projects" desc="A peak inside the Github vault" image={CSImage} colour="hover:border-purple-400" />
-        <Poster name="Music" desc="Lo-fi beats to debug to" image={musicImage} colour="hover:border-sky-400" />
-        <Poster name="Contact" desc="Ping me" colour="hover:border-rose-400" />
+        <Poster name="Bio" link="/Bio" desc="Who is this guy?!" image={posterImage} 
+        colour="hover:border-emerald-400" hoverColour="hover:to-[#165f2a41] " />
+
+        <Poster name="Projects" desc="A peak inside the Github vault" image={CSImage}
+         colour="hover:border-purple-400" hoverColour="hover:to-[#46165f54]"  />
+
+        <Poster name="Music" desc="Lo-fi beats to debug to" image={musicImage} 
+        colour="hover:border-sky-400"  hoverColour="hover:to-[#16595f54]"  />
+
+        <Poster name="Contact" desc="Ping me" 
+        colour="hover:border-rose-400"  hoverColour="hover:to-[#5f162e41]"  />
       </div>
+
+      <div className="bg-[#5f162e41]"></div>
+
     </>
   );
 }
