@@ -21,7 +21,7 @@ function Projects() {
 
       <div className="w-full h-screen bg-black">
         <ProjectSection imageSrc={suikaImage} colours="bg-linear-to-br from-[#811964] to-[#110b39]">
-            <Title className="text-white text-8xl underline underline-offset-10 mt-10" name="Suika Game" />
+            <Title className="text-white text-8xl underline underline-offset-10 mt-20" name="Suika Game" />
             <Text>Pixel-Art clone of popular Chinese game 'Suika Game' made 
                 using python game development library Pygame, and python's physics 
                 simulation engine pymunk.</Text>
@@ -30,7 +30,7 @@ function Projects() {
               bigger one until the biggest fruits are merged which disappear.</Text>
               
             <Icon path={githubLogo} link="www.chess.com" scalar="w-13 h-13" buttonSize="w-20 h-20" 
-            hoverColour="hover:border-neutral-300 hover:bg-neutral-900 "/> 
+            hoverColour="hover:border-neutral-300 hover:bg-[#222] "/> 
 
         </ProjectSection>
       </div>
