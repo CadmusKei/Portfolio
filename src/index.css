@@ -5,6 +5,10 @@
   image-rendering: pixelated; 
 }
 
+html{
+  scroll-behavior: smooth;  
+}
+
 @layer base {
   ::selection {
     background-color: #ffffff; 

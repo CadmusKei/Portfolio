@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import react from "../assets/Icons/Tools/react.svg";
-import framer from "../assets/Icons/Tools/Framer.svg";
+import framer from "../assets/Icons/Tools/Framer.png";
 import tailwind from "../assets/Icons/Tools/tailwind.svg";
 import node from "../assets/Icons/Tools/Node.svg";
 
