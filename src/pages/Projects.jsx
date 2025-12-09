@@ -49,13 +49,13 @@ function Projects() {
           <ProjectSection imageSrc={nsdImage} scale="w-[90%]" colours="bg-linear-to-br from-[#811964] to-[#110b39]">    
               <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
               <Title className="text-white text-8xl underline underline-offset-10 " name="NSD-RUN!" />
-              <Text>Pixel-Art clone of popular Chinese game 'Suika Game' made
-                  using python game development library Pygame, and python's physics
-                  simulation engine pymunk.</Text>
+              <Text>As part of a Game-Development Internship at animation and game development company, Studio Bo, 
+                I developed a endless runner game in Unity.The game was made for National Stop Sign Day. 
+                The player must collect all stop sign shards whilst avoiding obsatcles and fight the boss, 'Karen'.
+              </Text>
               <div className="flex w-full justify-around">
-                <Icon path={githubLogo} link="https://github.com/CadmusKei/NSD-RUN" target="_blank" scalar="w-13 h-13" buttonSize="w-20 h-20"
-                hoverColour="border-pink-200 hover:border-[#df40d45d]
-                  to-[#7a34d6c3] from-[#811964]"/>
+                <Icon path={githubLogo} link="https://github.com/CadmusKei/NSD-RUN" target="_blank" scalar="w-13 h-13"
+                buttonSize="w-20 h-20" hoverColour="border-pink-200 hover:border-[#df40d45d] to-[#7a34d6c3] from-[#811964]"/>
                 <Icon path={arrowIcon} link="#suika" scalar="w-10 h-6 "
                  buttonSize="w-20 h-20" hoverColour="border-pink-200 hover:border-[#df40d45d]
                   to-[#7a34d6c3] from-[#811964]" />  
@@ -72,6 +72,7 @@ function Projects() {
               <Text>Pixel-Art clone of popular Chinese game 'Suika Game' made
                   using python game development library Pygame, and python's physics
                   simulation engine pymunk.</Text>
+                <Text>The aim is to merge as much fruit as posilbe without spilling over the container.</Text>
               <div className="flex w-full justify-around">
                 <Icon path={githubLogo} link="https://github.com/CadmusKei/Suika-Game-Clone" target="_blank" scalar="w-13 h-13" buttonSize="w-20 h-20"
                 hoverColour="border-pink-200 hover:border-[#df40d45d]
