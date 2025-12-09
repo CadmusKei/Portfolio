@@ -1,22 +1,29 @@
+import { useEffect, useRef } from "react";
+
+function ProjectSection({ imageSrc, children, scale }) {
 
 
-function ProjectSection({name, imageSrc, children, colours}) {
-    
-    return (
-        <div className="flex w-full h-full " >
-            <div className={`flex items-center justify-center w-[60%] h-full 
-             ${colours} rounded-r-4xl shadow-[inset_0_-1rem_4rem_rgba(0,0,0,0.6)] `}>
-                    <img className="shadow-2xl shadow-black h-[93%] rounded-4xl" src={imageSrc} alt="" />
-            </div>
-            <div className="flex flex-col pl-20 pr-20 items-center space-y-15 w-[50%] h-full bg-[#000000]">
-                {children}
-            </div>
+  return (
+    <div className="flex w-full h-screen">
 
+      <div
+        className={`relative flex items-center justify-center
+        w-[55%] h-full overflow-hidden`}
+      >
+        <img
+          className={`shadow-xl shadow-black ${scale} rounded-4xl transition-transform duration-75`}
+          src={imageSrc}
+          alt=""
+        />
+      </div>
 
-            
-        </div>
-    );
-
+      {/* RIGHT: Text / Content */}
+      <div className="flex z-50 flex-col justify-center pl-20 pr-20 overflow-auto
+          w-[45%] h-full space-y-10">
+        {children}
+      </div>
+    </div>
+  );
 }
 
 export default ProjectSection;
