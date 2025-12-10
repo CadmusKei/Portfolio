@@ -11,7 +11,7 @@ export default function Music() {
 
             <div className="w-full h-[40%]  shadow-2xl
              shadow-black rounded-b-4xl">
-                <img src={me} alt="" className="w-full h-full object-cover  rounded-b-4xl"/>
+                <img src={me} alt="" className="w-full h-full object-cover object-bottom rounded-b-4xl"/>
             </div>
             
         </div>
