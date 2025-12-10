@@ -1,5 +1,5 @@
 
-import Nav from "../components/Nav";
+import keiLogo from '../assets/Icons/KeiLogoPixel.svg';
 import ProjectSection from "../components/ProjectSection";
 import Title from "../components/Title";
 import Text from "../components/Text";
@@ -8,7 +8,7 @@ import Icon from "../components/Icon";
 import githubLogo from "../assets/Icons/Tools/Github.svg"
 import arrowIcon from "../assets/Icons/Down-Arrow.svg"
 
-import suikaImage from "../assets/Images/Projects/Suika.png"
+import suikaImage from "../assets/Images/Projects/Suika.png"  
 import verifierImage from "../assets/Images/Projects/Verifier.png"
 import nsdImage from "../assets/Images/Projects/nsd.png"
 
@@ -22,6 +22,22 @@ function Projects() {
       bg-linear-to-br from-[#811964] to-[#110b39] z-0
       rounded-r-2xl shadow-[inset_0_-1rem_4rem] shadow-[#00000086]" />
   
+      <div className={`w-full h-[15%] bg-[#00000041] fixed shadow-xl z-50`}>
+        <div className="flex pl-10 w-full h-full items-center space-x-20">
+                
+          <a href="/">
+            <div className={
+              `flex w-18 h-18 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800 items-center justify-center 
+              transition hover:duration-400 hover:border-neutral-400 hover:bg-[#e1e1e13d] duration-900`}>
+                <img src={keiLogo} alt="" className={`w-11 h-8 image-pixel `}  />     
+            </div>
+               
+          </a>
+
+          <Title className={` mt-3 mb-3 text-white`} name="Kei Farouk"/>
+
+        </div>
+      </div>  
 
         <div className="relative z-10 scrollbar">
           <ProjectSection imageSrc={verifierImage} scale="w-[80%]" colours="bg-linear-to-br from-[#811964] to-[#110b39]">
@@ -85,9 +101,6 @@ function Projects() {
           </ProjectSection>    
         </div>
       
-      
-      
-
     </>
   );
 }
