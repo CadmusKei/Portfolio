@@ -6,6 +6,7 @@ import Poster from "../components/Poster";
 import posterImage from '../assets/Posters/Kei-Single.png';
 import CSImage from '../assets/Posters/CS-Single.png';
 import musicImage from '../assets/Posters/Music-Single.png';
+import contactImage from '../assets/Posters/Contact-Single.png';
 
 // bg-[#1c1c1c]
 
@@ -32,8 +33,14 @@ function Home() {
       <Nav background={navColour} TitleColour="text-white" />
       <div
         ref={scrollRef}
-        className="flex space-x-30 w-full h-screen bg-[#1c1c1c] overflow-x-scroll overflow-y-hidden items-center px-20
-        scrollbar">
+        className="flex space-x-30 w-full h-screen overflow-x-scroll overflow-y-hidden items-center px-20 scrollbar"
+        style={{
+          backgroundColor: "#1c1c1c",
+          backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.1) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundSize: "50px 50px",
+        }}
+      >
 
         <Poster name="Bio" link="/Bio" desc="Who is this guy?!" image={posterImage} 
         colour="hover:border-emerald-400" hoverColour="hover:to-[#165f2a41]"/>
@@ -44,7 +51,7 @@ function Home() {
         <Poster name="Music" link="/Music" desc="Lo-fi beats to debug to" image={musicImage} 
         colour="hover:border-sky-400"  hoverColour="hover:to-[#16595f54]" />
 
-        <Poster name="Contact" link="/Contact" desc="Ping me" 
+        <Poster name="Contact" link="/Contact" desc="Ping me" image={contactImage} 
         colour="hover:border-rose-400"  hoverColour="hover:to-[#5f162e41]"  />
       </div>
 

@@ -12,6 +12,8 @@ export default function Contact() {
     return (
         <div>
             <Nav background={navColour} TitleColour="text-white" />
+
+            
             <div className=" flex items-center w-full h-screen bg-[#171717] justify-center space-x-20">
                 <div className=" w-[25%] h-[50%] rounded-full overflow-hidden shadow-2xl
                 shadow-black">

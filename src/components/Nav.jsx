@@ -4,7 +4,7 @@ import Icon from "./Icon";
 import piIcon from '../assets/Icons/Pi.svg';
 import chipIcon from '../assets/Icons/Chip.svg';
 import quaverIcon from '../assets/Icons/Quaver.svg';
-import heartIcon from '../assets/Icons/Heart.svg';
+import phoneIcon from '../assets/Icons/Phone.svg';
 import keiLogo from '../assets/Icons/KeiLogoPixel.svg';
 
 function Nav({TitleColour, background}) {
@@ -28,7 +28,7 @@ function Nav({TitleColour, background}) {
               <Icon path={piIcon} link="/Bio" scalar="w-8 h-6 " hoverColour="hover:border-emerald-200 hover:bg-emerald-800" angle="-rotate-3" />  
               <Icon path={chipIcon} link="/Projects" scalar="w-8 h-8 " hoverColour="hover:border-purple-400 hover:bg-purple-900"  angle="rotate-2" />  
               <Icon path={quaverIcon} link="/Music" scalar="w-7 h-6 " hoverColour="hover:border-cyan-200  hover:bg-cyan-600 " angle="-rotate-3"/>  
-              <Icon path={heartIcon} scalar="w-8 h-7" hoverColour="hover:border-rose-400   hover:bg-rose-900 " angle="rotate-2"/>  
+              <Icon path={phoneIcon} link="/Contact" scalar="w-3 h-7" hoverColour="hover:border-rose-400   hover:bg-rose-900 " angle="rotate-2"/>  
             </div>
           </div> 
         </div>
