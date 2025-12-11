@@ -69,9 +69,7 @@ function Projects() {
                     text="An endless rougelike built with Python's game development library Pygame. 
                     Features resource management, powerups and varied rooms." next="#"/>
 
-        <ProjectTab id="rougelike" image={rougeLike} scale="w-[80%]" name="ROG: Rougelike" 
-                    text="An endless rougelike built with Python's game development library Pygame. 
-                    Features resource management, powerups and varied rooms." next="#"/>
+        
 
     </>
   );

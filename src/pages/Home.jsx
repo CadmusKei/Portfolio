@@ -30,8 +30,6 @@ function Home() {
   return (
     <>
 
-      <div className="bg-[#131313]"></div>
-
       <Nav background={navColour} TitleColour="text-white" />
       <div
         ref={scrollRef}
