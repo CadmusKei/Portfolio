@@ -30,6 +30,7 @@
         let [index, setIndex] = useState(0);
         const [currentTrack, setCurrentTrack] = useState(null); 
         const audioRef = useRef(null);
+        const [hasInteracted, setHasInteracted] = useState(false);
 
         function playNext()
         {
@@ -57,13 +58,14 @@
         }
 
         useEffect(() => {
-            if (!currentTrack) return;
-            setCurrentTrack(demoArray[index].Path);
-        }, [index] );
+            if (!hasInteracted) return;  
+            if (audioRef.current) audioRef.current.play();
+        }, [currentTrack, hasInteracted]);
 
         useEffect(() => {
-            audioRef.current.play();
-        }, [currentTrack] );
+            setCurrentTrack(demoArray[index].Path);
+        }, [index]);
+
 
         return (
 
@@ -86,7 +88,7 @@
 
                 <div className="flex items-center justify-around h-[30%] w-[65%]">
                     <AudioButton onClick={() => playLast()} icon={lastIcon} />
-                    <AudioButton onClick={() => audioRef.current.play()} icon={playIcon}/>
+                    <AudioButton onClick={() => {setHasInteracted(true);audioRef.current.play();}} icon={playIcon}/>
                     <AudioButton onClick={() => audioRef.current.pause()} icon={pauseIcon}/>
                     <AudioButton onClick={() => playNext()} icon={nextIcon}/>
                 </div>
