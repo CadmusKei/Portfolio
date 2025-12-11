@@ -34,9 +34,10 @@ export default function Music() {
                                 <div className={`absolute inset-0 bg-linear-to-t from-black to-transparent`}></div>
                                 <Text className="text-white z-10 m-5 text-3xl">About Cadmus</Text> 
                             </div>  
-                            <Text className="text-white z-10 m-5">A South African Lo-fi and Jazz Hip-Hop producer. 
-                                Taking inspiration from both classical hip-hop producers and lo-fi pioneers by the likes of Nujabes.  
-                                Blending a classical piano background with experimental vocals.</Text> 
+                            <Text className="text-white z-10 m-5">A South African lo-fi and jazz hip-hop producer 
+                            who draws inspiration from both classical hip-hop legends and lo-fi pioneers like Nujabes. 
+                            Blending a classical piano background with experimental vocals, they create a unique and atmospheric 
+                            sound.</Text> 
                         </div>
                         
                     </div>            
