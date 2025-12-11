@@ -17,7 +17,7 @@ export default function FlashingHeader() {
   
       <div className="w-10 h-10 shadow-2xl shadow-black">
           <div className={`w-full h-full rounded-md transition-all
-            duration-900 bg-[#232323] ${isBlue ? " bg-green-500" : "bg-[#131313]"}`}></div>
+            duration-900 bg-[#232323] ${isBlue ? " bg-blue-500" : "bg-[#131313]"}`}></div>
       </div>
   );
 }
