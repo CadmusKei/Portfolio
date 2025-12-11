@@ -28,7 +28,7 @@
         ];
                         
         let [index, setIndex] = useState(0);
-        const [currentTrack, setCurrentTrack] = useState(demoObject.Slowly.Path); 
+        const [currentTrack, setCurrentTrack] = useState(null); 
         const audioRef = useRef(null);
 
         function playNext()
