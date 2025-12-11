@@ -23,7 +23,7 @@ export default function Contact() {
                 <div className="flex justify-center items-center flex-col w-[50%] h-[50%] space-y-10">
                     <div className="h-[0.2rem] w-[80%] bg-[#ffffff] rounded-full"></div>
                     <div className="h-[0.2rem] w-full bg-[#ffffff] rounded-full"></div>
-                    <Title name="Maxwell Kei Farouk" className="text-white"/>
+                    <Title name="Maxwell Kei Farouk" className="text-white font-bold"/>
                     <div >
                         <Text>Email: maxwell.kei.farouk@gmail.com</Text>
                         <Text>Cell-Number: 067 404 1272</Text>
