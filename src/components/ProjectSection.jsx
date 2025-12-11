@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 
 function ProjectSection({ imageSrc, children, scale }) {
 
-
   return (
     <div className="flex w-full h-screen">
 
@@ -18,12 +17,13 @@ function ProjectSection({ imageSrc, children, scale }) {
       </div>
 
       {/* RIGHT: Text / Content */}
-      <div className="flex z-50 flex-col justify-center pl-20 pr-20 overflow-auto
+      <div className="flex z-40 flex-col justify-center pl-20 pr-20 overflow-auto
           w-[45%] h-full space-y-10">
         {children}
       </div>
     </div>
   );
+  
 }
 
 export default ProjectSection;

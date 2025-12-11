@@ -44,10 +44,9 @@ function Home() {
         <Poster name="Music" link="/Music" desc="Lo-fi beats to debug to" image={musicImage} 
         colour="hover:border-sky-400"  hoverColour="hover:to-[#16595f54]" />
 
-        <Poster name="Contact" desc="Ping me" 
+        <Poster name="Contact" link="/Contact" desc="Ping me" 
         colour="hover:border-rose-400"  hoverColour="hover:to-[#5f162e41]"  />
       </div>
-
 
     </>
   );

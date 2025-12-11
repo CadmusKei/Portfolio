@@ -1,18 +1,20 @@
 
-import keiLogo from '../assets/Icons/KeiLogoPixel.svg';
-import ProjectSection from "../components/ProjectSection";
-import Title from "../components/Title";
-import Text from "../components/Text";
-import Icon from "../components/Icon";
+import Nav from '../components/Nav';
 
-import githubLogo from "../assets/Icons/Tools/Github.svg"
-import arrowIcon from "../assets/Icons/Down-Arrow.svg"
+import suikaImage from "../assets/Images/Projects/Suika.png"  ;
+import verifierImage from "../assets/Images/Projects/Verifier.png";
+import nsdImage from "../assets/Images/Projects/nsd.png";
+import webImage from "../assets/Images/Projects/Website.png";
+import drawingImage from "../assets/Images/Projects/DrawingApp.png";
+import textbasedImage from "../assets/Images/Projects/Textbased.png";
+import rougeLike from "../assets/Images/Projects/RougeLike.png";
 
-import suikaImage from "../assets/Images/Projects/Suika.png"  
-import verifierImage from "../assets/Images/Projects/Verifier.png"
-import nsdImage from "../assets/Images/Projects/nsd.png"
+import ProjectTab from '../components/ProjectTab';
 
 function Projects() {
+
+    let navColour = "bg-[#00000041]"
+
   
   return (
     <>
@@ -23,84 +25,54 @@ function Projects() {
       rounded-r-2xl shadow-[inset_0_-1rem_4rem] shadow-[#00000086]" />
   
       <div className={`w-full h-[15%] bg-[#00000041] fixed shadow-xl z-50`}>
-        <div className="flex pl-10 w-full h-full items-center space-x-20">
-                
-          <a href="/">
-            <div className={
-              `flex w-18 h-18 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800 items-center justify-center 
-              transition hover:duration-400 hover:border-neutral-400 hover:bg-[#e1e1e13d] duration-900`}>
-                <img src={keiLogo} alt="" className={`w-11 h-8 image-pixel `}  />     
-            </div>
-               
-          </a>
-
-          <Title className={` mt-3 mb-3 text-white`} name="Kei Farouk"/>
-
-        </div>
+        <Nav background={navColour} TitleColour="text-white" />
       </div>  
 
-        <div className="relative z-10 scrollbar">
-          <ProjectSection imageSrc={verifierImage} scale="w-[80%]" colours="bg-linear-to-br from-[#811964] to-[#110b39]">
-              <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
-              <Title className="text-white text-8xl underline underline-offset-10" name="Verifier" />  
-              <Text>As a team, developed a qualification verifier using a feature-rich 
-                simulated blockchain in a Next.js (React) application with Node.js backend
-                 within 24 hours.</Text>    
-              <Text>The verifyer implements encryption methods including RSA and SHA-256 for secure hashing.</Text>             
-              <div className="flex w-full justify-around">
-                <Icon path={githubLogo} link="https://github.com/shawqicauses/yeagerists-project/tree/main" 
-                scalar="w-13 h-13" buttonSize="w-20 h-20" target="_blank"
-                hoverColour="border-pink-200 hover:border-[#df40d45d]
-                  to-[#7a34d6c3] from-[#811964]"/>
-                <Icon path={arrowIcon} link="#nsd" scalar="w-10 h-6 "
-                 buttonSize="w-20 h-20" hoverColour="border-pink-200 hover:border-[#df40d45d]
-                  to-[#7a34d6c3] from-[#811964]"/>  
-              </div>
-              <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
-          </ProjectSection>
-        </div>
+         <ProjectTab id="#" image={nsdImage} scale="w-[90%]" name="NSD-RUN!" 
+                    text="As part of a Game-Development Internship at animation and game development company, Studio Bo, 
+                    I developed a endless runner game in Unity.The game was made for National Stop Sign Day. 
+                    The player must collect all stop sign shards whilst avoiding obsatcles and fight the boss, 'Karen'. "
+                    link="https://github.com/CadmusKei/NSD-RUN" next="#verify"/>
 
-        <div className="w-full h-screen">
-        <a id="nsd"></a>
-          <ProjectSection imageSrc={nsdImage} scale="w-[90%]" colours="bg-linear-to-br from-[#811964] to-[#110b39]">    
-              <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
-              <Title className="text-white text-8xl underline underline-offset-10 " name="NSD-RUN!" />
-              <Text>As part of a Game-Development Internship at animation and game development company, Studio Bo, 
-                I developed a endless runner game in Unity.The game was made for National Stop Sign Day. 
-                The player must collect all stop sign shards whilst avoiding obsatcles and fight the boss, 'Karen'.
-              </Text>
-              <div className="flex w-full justify-around">
-                <Icon path={githubLogo} link="https://github.com/CadmusKei/NSD-RUN" target="_blank" scalar="w-13 h-13"
-                buttonSize="w-20 h-20" hoverColour="border-pink-200 hover:border-[#df40d45d] to-[#7a34d6c3] from-[#811964]"/>
-                <Icon path={arrowIcon} link="#suika" scalar="w-10 h-6 "
-                 buttonSize="w-20 h-20" hoverColour="border-pink-200 hover:border-[#df40d45d]
-                  to-[#7a34d6c3] from-[#811964]" />  
-              </div>
-              <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
-          </ProjectSection>    
-        </div>
+        <ProjectTab id="verify" image={verifierImage} scale="w-[90%]" name="Verifier" 
+                    text="As a team, developed a qualification verifier using a feature-rich 
+                    simulated blockchain in a Next.js (React) application with Node.js backend
+                    within 24 hours. The verifyer implements encryption methods including RSA 
+                    and SHA-256 for secure hashing. "
+                    link="https://github.com/shawqicauses/yeagerists-project/" next="#suika"/>
 
-        <div className="w-full h-screen">
-          <a id="suika"></a>
-          <ProjectSection imageSrc={suikaImage} scale="h-[90%]" colours="bg-linear-to-br from-[#811964] to-[#110b39]">    
-              <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
-              <Title className="text-white text-8xl underline underline-offset-10 " name="Suika Game" />
-              <Text>Pixel-Art clone of popular Chinese game 'Suika Game' made
-                  using python game development library Pygame, and python's physics
-                  simulation engine pymunk.</Text>
-                <Text>The aim is to merge as much fruit as posilbe without spilling over the container.</Text>
-              <div className="flex w-full justify-around">
-                <Icon path={githubLogo} link="https://github.com/CadmusKei/Suika-Game-Clone" target="_blank" scalar="w-13 h-13" buttonSize="w-20 h-20"
-                hoverColour="border-pink-200 hover:border-[#df40d45d]
-                  to-[#7a34d6c3] from-[#811964]"/>
-                <Icon path={arrowIcon} link="#" scalar="w-10 h-6 "
-                 buttonSize="w-20 h-20" hoverColour="border-pink-200 hover:border-[#df40d45d]
-                  to-[#7a34d6c3] from-[#811964]" />  
-              </div>
-              <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
-          </ProjectSection>    
-        </div>
+        <ProjectTab id="suika" image={suikaImage} scale="h-[90%]" name="Suika Game" 
+                    text="Pixel-Art clone of popular Chinese game 'Suika Game' made
+                          using python game development library Pygame, and python's physics
+                          simulation engine pymunk."
+                    link="https://github.com/CadmusKei/Suika-Game-Clone" next="#portfolio"/>
       
+        <ProjectTab id="portfolio" image={webImage} scale="w-[90%]" name="My Website" 
+                    text="Things are getting a bit meta...Built with a modern web development stack including 
+                    Vite, React, Framer Motion, and Tailwind CSS, it features a sleek, UI with dynamic animations. 
+                    Key highlights include a custom-built audio player, responsive layouts, and carefully crafted 
+                    visual elements that showcase my skills in web design, front-end development, and interactive media. "
+                    link="https://github.com/CadmusKei/Portfolio" next="#drawing"/>
+
+        <ProjectTab id="drawing" image={drawingImage} scale="w-[80%]" name="Drawing App" 
+                    text="A lightweight, web-based drawing application built using vanilla HTML and Tailwind CSS. 
+                    The app provides a simple GUI for quick sketches."
+                    link="https://github.com/CadmusKei/DrawingApp" next="#textbased-adventure"/>
+
+        <ProjectTab id="textbased-adventure" image={textbasedImage} scale="h-[75%]" name="Text Game" 
+                    text="A text-based adventure game demo, built to explore 
+                    building modular designs outside classes. 
+                    Data files, objects, and maps were all stored in python dictionaries."
+                    link="https://github.com/CadmusKei/Textbased-Adventure-Project" next="#rougelike"/>
+
+        <ProjectTab id="rougelike" image={rougeLike} scale="w-[80%]" name="ROG: Rougelike" 
+                    text="An endless rougelike built with Python's game development library Pygame. 
+                    Features resource management, powerups and varied rooms." next="#"/>
+
+        <ProjectTab id="rougelike" image={rougeLike} scale="w-[80%]" name="ROG: Rougelike" 
+                    text="An endless rougelike built with Python's game development library Pygame. 
+                    Features resource management, powerups and varied rooms." next="#"/>
+
     </>
   );
 }

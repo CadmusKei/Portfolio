@@ -24,18 +24,18 @@ export default function Music() {
                 
                 <div className="flex flex-col items-center w-full h-200 bg-[#111]">
                     
-                    <div className="mt-20 p-10 space-x-10 flex w-[95%] h-[100%] bg-[#1c1c1c] rounded-4xl">  
+                    <div className="mt-20 p-10 space-x-10 flex w-[95%] h-full bg-[#1c1c1c] rounded-4xl">  
 
                         <AudioPlayer/>
 
 
-                        <div className={`flex flex-col w-[30%] h-[100%] rounded-4xl bg-[#3030308e] overflow-hidden shadow-2xl shadow-black`}>
+                        <div className={`flex flex-col w-[30%] h-full rounded-4xl bg-[#3030308e] overflow-hidden shadow-2xl shadow-black`}>
                             <div className={`relative flex items-end w-full h-[60%] bg-cover bg-bottom`} style={{ backgroundImage: `url(${me_2})` }}> 
                                 <div className={`absolute inset-0 bg-linear-to-t from-black to-transparent`}></div>
                                 <Text className="text-white z-10 m-5 text-3xl">About Cadmus</Text> 
                             </div>  
-                            <Text className="text-white z-10 m-5">A South African lo-fi and jazz hip-hop producer 
-                            who draws inspiration from both classical hip-hop legends and lo-fi pioneers like Nujabes. 
+                            <Text className="text-white z-10 m-5">A South African lo-fi producer 
+                            who draws inspiration from classical hip-hop legends and lo-fi pioneers like Nujabes. 
                             Blending a classical piano background with experimental vocals, they create a unique and atmospheric 
                             sound.</Text> 
                         </div>
