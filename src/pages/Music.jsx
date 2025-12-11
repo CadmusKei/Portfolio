@@ -22,9 +22,9 @@ export default function Music() {
                 </div>
 
                 
-                <div className="flex flex-col items-center w-full h-400 bg-[#111]">
+                <div className="flex flex-col items-center w-full h-200 bg-[#111]">
                     
-                    <div className="mt-20 p-10 space-x-10 flex w-[95%] h-[50%] bg-[#1c1c1c] rounded-4xl">  
+                    <div className="mt-20 p-10 space-x-10 flex w-[95%] h-[100%] bg-[#1c1c1c] rounded-4xl">  
 
                         <AudioPlayer/>
 
