@@ -57,6 +57,7 @@
         }
 
         useEffect(() => {
+            if (!currentTrack) return;
             setCurrentTrack(demoArray[index].Path);
         }, [index] );
 
