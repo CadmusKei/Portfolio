@@ -6,7 +6,7 @@ import Icon from "../components/Icon";
 
 import WebCarousel from "../components/WebCarousel";
 import CodeCarousel from "../components/CodeCarousel";
-import AppsCarousel from "../components/AppsCarousel";
+import AppsCarousel from "../components/AppsCarousel";  
 
 import arrowIcon from "../assets/Icons/Down-Arrow.svg"
 

@@ -35,7 +35,7 @@ function Projects() {
                     link="https://github.com/CadmusKei/NSD-RUN" next="#verify"/>
 
         <ProjectTab id="verify" image={verifierImage} scale="w-[90%]" name="Verifier" 
-                    text="As a team, developed a qualification verifier using a feature-rich 
+                    text="Hackathon winning project. As a team, developed a qualification verifier using a feature-rich 
                     simulated blockchain in a Next.js (React) application with Node.js backend
                     within 24 hours. The verifyer implements encryption methods including RSA 
                     and SHA-256 for secure hashing. "
