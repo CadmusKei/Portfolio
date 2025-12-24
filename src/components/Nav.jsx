@@ -23,7 +23,7 @@ function Nav({TitleColour, background}) {
         </a>
          
           <div className="flex w-full items-center">
-            <Title className={`pl-1 mt-3 mb-3 ${TitleColour}`} name="Kei Farouk"/>
+            <Title className={`pl-1 mt-3 mb-3 ${TitleColour}`} name="Maxwell Kei Farouk"/>
             <div className="absolute flex space-x-20 right-[5%]">
               <Icon path={piIcon} link="/Bio" scalar="w-8 h-6 " hoverColour="hover:border-emerald-200 hover:bg-emerald-800" angle="-rotate-3" />  
               <Icon path={chipIcon} link="/Projects" scalar=":w-8 h-8 " hoverColour="hover:border-purple-400 hover:bg-purple-900"  angle="rotate-2" />  
