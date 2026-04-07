@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
+
 .text-pixel {
   font-family: 'Pixelify Sans', monospace;
   image-rendering: pixelated; 
@@ -25,5 +26,11 @@ html{
   scrollbar-width: auto;
   scrollbar-color: #696969 #1d1d1d00;
 }
+
+body {
+  background-color: #131313;
+}
+
+
 @import 'tailwindcss';
 
