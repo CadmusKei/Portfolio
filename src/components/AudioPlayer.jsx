@@ -13,13 +13,19 @@
     import slowlyPath from '../assets/Demos/Slowly.mp3';
     import iverPath from '../assets/Demos/Iver.mp3';
     import wishICouldBePath from '../assets/Demos/Wish I Could Be the Reason Why.mp3';
+    import worldWithoutWordsPath from '../assets/Demos/A world without words.mp3';
+    import iouPath from '../assets/Demos/I O U.mp3';
+    import starlightPath from '../assets/Demos/Starlight.mp3';
 
     export default function AudioPlayer() {
     
     const demoArray = [
-        { Title: "Which I Could Be The Reason", Path: wishICouldBePath },
-        { Title: "Slowly", Path: slowlyPath },
-        { Title: "Iver", Path: iverPath },
+    { Title: "Wish I Could Be The Reason Why", Path: wishICouldBePath },
+    { Title: "Slowly", Path: slowlyPath },
+    { Title: "Iver", Path: iverPath },
+    { Title: "Starlight", Path: starlightPath },
+    { Title: "I O U", Path: iouPath },
+    { Title: "A World Without Words", Path: worldWithoutWordsPath },
     ];
 
     const [index, setIndex] = useState(0);
