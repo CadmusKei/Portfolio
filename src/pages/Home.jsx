@@ -33,7 +33,7 @@ function Home() {
       <Nav background={navColour} TitleColour="text-white" />
       <div
         ref={scrollRef}
-        className="flex space-x-30 w-full h-screen overflow-x-scroll overflow-y-hidden items-center px-20 scrollbar"
+        className="flex space-x-30 w-full h-screen overflow-x-scroll overflow-y-hidden items-center px-12 scrollbar"
         style={{
           backgroundColor: "#131313",
           backgroundImage: `linear-gradient(0deg, rgba(255,255,255,0.1) 1px, transparent 1px),

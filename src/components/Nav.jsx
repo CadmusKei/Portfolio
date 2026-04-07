@@ -9,31 +9,33 @@ import keiLogo from '../assets/Icons/KeiLogoPixel.svg';
 
 function Nav({TitleColour, background}) {
   return (
-    <>
-      <div className={`w-full h-[10%] md:h-[15%] ${background} fixed shadow-xl z-50`}>
-        <div className="flex pl-10 w-full h-full items-center space-x-20">
-          
-         <a href="/">
-         <div className={
-          `flex w-10 h-10 md:w-18 md:h-18 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800 items-center justify-center 
-          transition hover:duration-400 hover:border-neutral-400 hover:bg-[#e1e1e13d] duration-900`
-          }>
-            <img src={keiLogo} alt="" className={` md:w-11 md:h-8 image-pixel `}  />
-         </div>
-        </a>
-         
-          <div className="flex w-full items-center">
-            <Title className={`pl-1 mt-3 mb-3 ${TitleColour}`} name="Maxwell Kei Farouk"/>
-            <div className="absolute flex space-x-20 right-[5%]">
-              <Icon path={piIcon} link="/Bio" scalar="w-8 h-6 " hoverColour="hover:border-emerald-200 hover:bg-emerald-800" angle="-rotate-3" />  
-              <Icon path={chipIcon} link="/Projects" scalar=":w-8 h-8 " hoverColour="hover:border-purple-400 hover:bg-purple-900"  angle="rotate-2" />  
-              <Icon path={quaverIcon} link="/Music" scalar="w-7 h-6 " hoverColour="hover:border-cyan-200  hover:bg-cyan-600 " angle="-rotate-3"/>  
-              <Icon path={phoneIcon} link="/Contact" scalar="w-3 h-7" hoverColour="hover:border-rose-400   hover:bg-rose-900 " angle="rotate-2"/>  
+    <div className={`w-full h-[10%] md:h-[15%] ${background} fixed shadow-xl z-50`}>
+      <div className="flex pl-4 md:pl-10 w-full h-full items-center justify-between pr-4 md:pr-[5%]">
+        
+        {/* Logo + Title */}
+        <div className="flex items-center space-x-3 md:space-x-5 min-w-0">
+          <a href="/" className="shrink-0">
+            <div className="flex w-10 h-10 md:w-18 md:h-18 rounded-lg shadow-neutral-950 shadow-md border-3 border-neutral-800 items-center justify-center transition hover:duration-400 hover:border-neutral-400 hover:bg-[#e1e1e13d] duration-900">
+              <img src={keiLogo} alt="" className="md:w-11 md:h-8 w-6 image-pixel" />
             </div>
-          </div> 
+          </a>
+
+          <Title 
+            className={`pl-1 mt-3 mb-3 truncate hidden sm:block ${TitleColour}`} 
+            name="Maxwell Kei Farouk"
+          />
         </div>
+
+        {/* Icons */}
+        <div className="flex items-center space-x-4 md:space-x-20 shrink-0">
+          <Icon path={piIcon}      link="/Bio"     scalar="w-8 h-6"  hoverColour="hover:border-emerald-200 hover:bg-emerald-800" angle="-rotate-3" />
+          <Icon path={chipIcon}    link="/Projects" scalar="w-8 h-8"  hoverColour="hover:border-purple-400 hover:bg-purple-900"  angle="rotate-2"  />
+          <Icon path={quaverIcon}  link="/Music"   scalar="w-7 h-6"  hoverColour="hover:border-cyan-200 hover:bg-cyan-600"       angle="-rotate-3" />
+          <Icon path={phoneIcon}   link="/Contact" scalar="w-3 h-7"  hoverColour="hover:border-rose-400 hover:bg-rose-900"       angle="rotate-2"  />
+        </div>
+
       </div>
-    </>
+    </div>
   );
 }
 
