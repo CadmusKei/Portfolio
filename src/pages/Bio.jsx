@@ -22,11 +22,16 @@ function Bio() {
             
             <div 
                 className="flex flex-col items-center md:items-start md:pl-20 w-screen md:w-full min-h-screen md:h-400 bg-cover bg-center bg-no-repeat overflow-x-hidden" 
-                style={{ 
-                    backgroundImage: window.innerWidth < 768 
-                        ? `url(${backgroundPicMobile})` 
-                        : `url(${backgroundPic})`
-                }}
+                style={ window.innerWidth < 768 ? {
+            backgroundColor: "#131313",
+            backgroundImage: `
+                linear-gradient(0deg, rgba(255,255,255,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: "25px 25px",
+        } : {
+            backgroundImage: `url(${backgroundPic})`
+        }}
             >
                 {/* Bio blurb */}
                 <div className={`flex w-[90%] md:w-[60%] flex-col border-2 border-[#7373736f] ${pageGradient} mt-24 md:mt-40 rounded-4xl 
@@ -54,13 +59,13 @@ function Bio() {
                         <CV />
                     </div>
 
-                    {/* Divider — horizontal on mobile, vertical on desktop */}
+                    {/* Divider */}
                     <div className="w-full h-[0.2rem] md:w-[0.2rem] md:h-full rounded-3xl bg-[#e7e7e747]" />
 
                     {/* Skills */}
                     <div className="w-full md:w-[40%] md:h-full flex items-center flex-col space-y-15">
                         <Title className="text-white underline underline-offset-6 text-center" name="My Inventory" />
-                        <div className="flex flex-col items-center w-full space-y-15">
+                        <div className="flex flex-col items-center w-full space-y-5 md:space-y-15">
                             <WebCarousel />
                             <CodeCarousel />
                             <AppsCarousel />
