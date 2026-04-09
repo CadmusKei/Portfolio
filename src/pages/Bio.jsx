@@ -10,8 +10,6 @@
 
     import arrowIcon from "../assets/Icons/Down-Arrow.svg"
 
-    import backgroundPic from '../assets/Images/studio-site-crop.jpeg';
-    import backgroundPicMobile from '../assets/Images/Music/me_2.jpeg';
     const pageGradient = "bg-linear-to-br from-neutral-950 to-[#21212141] transition duration-800 hover:to-[#66666641] "
 
     function Bio() {
@@ -26,7 +24,8 @@
                     w-screen md:w-full min-h-screen md:h-400
                     overflow-x-hidden
 
-                    bg-gradient-to-br from-[#811964] via-[#3b1d6b] to-[#110b39]
+                    bg-[url('/src/assets/Images/me_3.jpeg')]
+                    bg-cover bg-center  bg-no-repeat
 
                     md:bg-[url('/src/assets/Images/studio-site-crop.jpeg')]
                     md:bg-cover md:bg-center md:bg-no-repeat
