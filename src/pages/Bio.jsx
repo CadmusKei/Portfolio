@@ -44,7 +44,7 @@
                     {/* CV + Skills section */}
                     <div 
                         id="cv-section"
-                        className="flex flex-col md:flex-row w-[90%] md:w-[95%] bg-linear-to-br from-neutral-950:80% to-[#21212141]:80%
+                        className="flex flex-col md:flex-row w-[90%] md:w-[95%] bg-linear-to-br from-neutral-950:90% to-[#21212141]:90%
                         mt-10 md:mt-60 mb-10 rounded-4xl p-6 md:p-10 justify-around shadow-2xl shadow-black 
                         border-2 border-[#a7a7a747] gap-8 md:h-[40%]"
                     >
