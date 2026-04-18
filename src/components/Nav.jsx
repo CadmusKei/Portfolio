@@ -10,7 +10,8 @@ import keiLogo from '../assets/Icons/KeiLogoPixel.svg';
 function Nav({TitleColour, background}) {
   return (
     <div className={`w-full h-[10%] md:h-[15%] ${background} fixed shadow-xl z-50`}>
-      <div className="flex pl-4 md:pl-10 w-full h-full items-center justify-between pr-4 md:pr-[5%]">
+      <div className="flex pl-4 md:pl-10 w-full h-full items-center backdrop-blur-xs border-b
+       justify-between pr-4 md:pr-[5%] border-white/10">
         
         {/* Logo + Title */}
         <div className="flex items-center space-x-3 md:space-x-5 min-w-0">

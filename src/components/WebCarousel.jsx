@@ -43,7 +43,7 @@ export default function WebCarousel() {
             onClick={() => window.open(icon.link, "_blank")}
             style={{ width: iconWidth, height: iconWidth }}
             className="flex items-center justify-center rounded-2xl cursor-pointer
-              hover:bg-[#7575755e] transition hover:duration-300 duration-1000 
+              hover:bg-[#a8a8a85e] transition hover:duration-300 duration-1000 
               bg-linear-to-br from-[#3131315e] to-[#8888885e] 
               border-2 border-[#7777775e] shadow-lg shadow-[#17171770]"
           >
