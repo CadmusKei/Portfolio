@@ -12,7 +12,9 @@ export default function ProjectTab({image, text, name, scale, link, id, next}) {
     <div className="w-full min-h-screen md:h-screen">
       <a id={id}></a>
       <ProjectSection imageSrc={image} scale={scale}>
-        <div className="md:contents flex flex-col w-full space-y-6 bg-[#00000060] md:bg-transparent backdrop-blur-sm md:backdrop-blur-none rounded-3xl p-6 md:p-0">
+        <div className="md:contents flex flex-col w-full space-y-6 bg-linear-to-br
+         from-black/10 to-black/35 backdrop-blur-3xl border border-white/15
+         md:bg-transparent md:backdrop-blur-none rounded-3xl p-6 md:p-0 ">
           <div className="h-[0.2rem] w-full bg-[#ffffff5c] rounded-full"></div>
           <Title className="text-white text-3xl md:text-8xl underline underline-offset-4 md:underline-offset-10" name={name} />
           <Text>{text}</Text>
