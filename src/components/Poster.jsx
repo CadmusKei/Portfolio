@@ -16,7 +16,7 @@ function Poster({ name, link, desc, image, colour, hoverColour, successor }) {
 
           <a id={successor}></a>
 
-        <Card link={link} width="w-[70%] md:w-[28%]" height=" md:h-[100%] h-full" className={`flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700
+        <Card link={link} width="w-[70%] md:w-[28%]" height=" md:h-[100%] h-[50%]" className={`flex shadow-2xl -rotate-2 hover:rotate-2 transition duration-700
           border-2 border-neutral-800 ${colour} `}>
           <div className="flex flex-col h-full w-full justify-start items-center">
             <AnimatedCover src={image} width="w-full" />
@@ -31,7 +31,7 @@ function Poster({ name, link, desc, image, colour, hoverColour, successor }) {
           <Description content={desc} />
         </div>
 
-          <img src={sideArrow} alt="" />
+          <img  src={sideArrow} alt="" />
 
       </Block>
     </>
