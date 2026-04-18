@@ -31,7 +31,7 @@ function Poster({ name, link, desc, image, colour, hoverColour, successor }) {
           <Description content={desc} />
         </div>
 
-          <img  src={sideArrow} alt="" />
+          <img className="w-5" src={sideArrow} alt="" />
 
       </Block>
     </>
